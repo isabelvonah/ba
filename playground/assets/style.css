@@ -1,0 +1,9 @@
+.stage {
+	width: 3px;
+	height: 3px;
+	border: 1px;
+}
+
+body {
+	  background-color: lightblue;
+	}
