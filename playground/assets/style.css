@@ -17,6 +17,13 @@
 	background-color: red;
 }
 
+.marginRight {
+	margin-right: 60px;
+}
+.rows {
+	transform: rotate(5deg);
+}
+
 body {
 	background-color: lightblue;
 }
