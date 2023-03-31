@@ -8,13 +8,21 @@
 	width: 20px;
 	height: 20px;
 	border-radius: 100%;
-	background-color: blue;
+	background-color: beige;
 	margin: 5px;
 	display: inline-block;
 }
 
-.selected {
+.seat.category-A {}
+
+.seat.category-B {}
+
+.taken {
 	background-color: red;
+}
+
+.selected {
+	background-color: blue;
 }
 
 .marginRight {
