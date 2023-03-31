@@ -100,3 +100,31 @@ const changeColor = (el) => {
     updateCounter();
     
 }
+
+function trackClicks() {
+    var clicks = [];
+  
+    document.addEventListener('click', function(event) {
+      var click = {
+        x: event.clientX,
+        y: event.clientY,
+        time: new Date().getTime()
+      };
+      clicks.push(click);
+    });
+  
+    console.log('Click tracking started.');
+  
+    return clicks;
+  }
+  
+  function trackMousePosition() {
+    document.addEventListener('mousemove', function(event) {
+      console.log('Mouse position:', event.clientX, event.clientY, new Date().getTime());
+    });
+  }
+  
+  const start = () => {
+      addSeatSetting(setting1);
+      trackMousePosition();
+  }
