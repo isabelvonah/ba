@@ -58,7 +58,7 @@ const addSeat = (id, category, taken) => {
 const addSeatSetting = (setting) => {
 
     let seatsAdded = 0;
-    let rows = document.getElementsByClassName("rows")[0];
+    let rows = document.getElementById("rows");
 
     let setting_rows = setting[setting.length -1].id.split("-")[0];
     let setting_seats = setting[setting.length -1].id.split("-")[1];

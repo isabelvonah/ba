@@ -1,7 +1,25 @@
+#plan {
+	border: 5px solid grey;
+	margin: 30px;
+	padding: 30px;
+	display: inline-block;
+}
+
+#textDiv {
+	display: inline-block;
+}
+
 #stage {
 	width: 300px;
 	height: 150px;
-	border: 5px solid red;
+	border: 5px solid grey;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#rows {
+	/*transform: rotate(5deg);*/
+	margin: 0 auto;
 }
 
 .seat {
@@ -28,9 +46,7 @@
 .marginRight {
 	margin-right: 60px;
 }
-.rows {
-	transform: rotate(5deg);
-}
+
 
 body {
 	background-color: lightblue;
