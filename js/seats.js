@@ -8,7 +8,8 @@ const addSeat = (id, category, taken) => {
     seat.classList.add("seat");
     seat.classList.add("category-" + category);
     if(taken) {seat.classList.add("taken")};
-    seat.setAttribute("onclick", "changeColor(this);");
+    //seat.setAttribute("onclick", "changeColor(this);");
+    //seat.addEventListener("click", changeColor);
 
     row.appendChild(seat);
 }
@@ -47,6 +48,7 @@ const updateCounter = () => {
 }
 
 const changeColor = (el) => {
+    console.log(el);
     if (!el.classList.contains("taken")) {
         if (el.classList.contains("selected")) {
             el.classList.remove("selected");

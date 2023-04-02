@@ -59,3 +59,7 @@ const stopTracking = () => {
     untrackMouseClicks();
 }
 
+//eventListeners / previously: onclick-functions
+document.querySelector("#start-button").addEventListener("click", startTracking);
+document.querySelector("#start-button").addEventListener("click", stopTracking);
+//document.querySelector(".seat").addEventListener("click", changeColor);
