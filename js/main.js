@@ -3,12 +3,23 @@ import { addSeatSetting, changeColor } from "./seats.js";
 import { addLegend } from "./legend.js";
 
 const changeToStartView = () => {
-  document.body.innerHTML = "<button id='start-view'>Start</button>";
-  document.querySelector("#start-view").addEventListener("click", changeToTicketView);
+  document.body.innerHTML = `
+
+  <div id='start-view'>
+    <button id='start-view-button'>Start</button>
+  </div>
+
+  `;
+  document.querySelector("#start-view-button").addEventListener("click", changeToTicketView);
 }
 
 const changeToTicketView = () => {
+
+  let probNr = document.getElementById("probNr").value;
+
   document.body.innerHTML = `
+
+  <input id="probNr" class="hidden" value="`+ probNr.toString() + `"></input>
 
   <!-- Konzertsaal -->
   <div id="plan">
@@ -83,7 +94,14 @@ const untrackMouseClicks = () => {
 }
 
 const startTracking = () => {
-    addSeatSetting(setting1);
+    let probNr = document.getElementById("probNr").value;
+
+    if(probNr == 1) {
+      addSeatSetting(setting1);
+    } else {
+      addSeatSetting(setting2)
+    }
+    //addSeatSetting(setting1);
     addLegend();
     trackMousePosition();
     trackMouseClicks();
@@ -96,6 +114,6 @@ const stopTracking = () => {
 }
 
 //eventListeners / previously: onclick-functions
-document.querySelector("#start-view").addEventListener("click", changeToTicketView);
+document.querySelector("#start-view-button").addEventListener("click", changeToTicketView);
 //querySelector with class doesnt work so far...
 //document.querySelector(".seat").addEventListener("click", changeColor);
