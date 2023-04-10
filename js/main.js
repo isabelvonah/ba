@@ -1,13 +1,15 @@
-import { setting1 } from "./settings.js";
+import { setting1, setting2 } from "./settings.js";
 import { addSeatSetting, changeColor } from "./seats.js";
 import { addLegend } from "./legend.js";
 
-const trackMousePosition = () => {
-document.addEventListener('mousemove', function(event) {
-    console.log('Mouse position:', event.clientX, event.clientY, new Date().getTime());
-});
-}
 
+const trackMousePosition = () => {
+    document.addEventListener('mousemove', function(event) {
+      console.log('Mouse position:', event.clientX, event.clientY, new Date().getTime());
+    });
+  };
+
+/*
 const trackMousePositionWithDownload = () => {
     let data = '';
     document.addEventListener('mousemove', function(event) {
@@ -29,11 +31,10 @@ const trackMousePositionWithDownload = () => {
       URL.revokeObjectURL(url);
     });
     document.body.appendChild(downloadButton);
-  }
+  } */
 
 const untrackMousePosition = () => {
     document.removeEventListener('mousemove', trackMousePosition);
-    console.log("asdöfkjas");
 }
 
 const trackMouseClicks = () => {
@@ -44,7 +45,6 @@ document.addEventListener('click', function(event) {
 
 const untrackMouseClicks = () => {
     document.removeEventListener('click', trackMouseClicks);
-    console.log("öasdföasdkljf");
 }
 
 export const startTracking = () => {
@@ -61,5 +61,6 @@ const stopTracking = () => {
 
 //eventListeners / previously: onclick-functions
 document.querySelector("#start-button").addEventListener("click", startTracking);
-document.querySelector("#start-button").addEventListener("click", stopTracking);
+document.querySelector("#stop-button").addEventListener("click", stopTracking);
+//querySelector with class doesnt work so far...
 //document.querySelector(".seat").addEventListener("click", changeColor);
