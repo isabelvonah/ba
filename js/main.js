@@ -2,6 +2,41 @@ import { setting1, setting2 } from "./settings.js";
 import { addSeatSetting, changeColor } from "./seats.js";
 import { addLegend } from "./legend.js";
 
+const changeToStartView = () => {
+  document.body.innerHTML = "<button id='start-view'>Start</button>";
+  document.querySelector("#start-view").addEventListener("click", changeToTicketView);
+}
+
+const changeToTicketView = () => {
+  document.body.innerHTML = `
+
+  <!-- Konzertsaal -->
+  <div id="plan">
+      <div id="stage">Bühne</div>
+      <div id="rows">
+          <div class="row"></div>
+      </div>
+  </div>
+  
+  <!-- Beschreibung -->
+  <div id="textDiv" >
+
+      <div id="legend"></div>
+
+      <div id="counter">
+          ausgewählte Plätze:<br>
+      </div>
+
+      <button id="start-button">Start</button> 
+      <button id="stop-button">Stop</button> 
+  </div> 
+  
+  `;
+
+  document.querySelector("#start-button").addEventListener("click", startTracking);
+  document.querySelector("#stop-button").addEventListener("click", stopTracking);
+}
+
 
 const trackMousePosition = () => {
     document.addEventListener('mousemove', function(event) {
@@ -47,7 +82,7 @@ const untrackMouseClicks = () => {
     document.removeEventListener('click', trackMouseClicks);
 }
 
-export const startTracking = () => {
+const startTracking = () => {
     addSeatSetting(setting1);
     addLegend();
     trackMousePosition();
@@ -55,12 +90,12 @@ export const startTracking = () => {
 }
 
 const stopTracking = () => {
+    changeToStartView();
     untrackMousePosition();
     untrackMouseClicks();
 }
 
 //eventListeners / previously: onclick-functions
-document.querySelector("#start-button").addEventListener("click", startTracking);
-document.querySelector("#stop-button").addEventListener("click", stopTracking);
+document.querySelector("#start-view").addEventListener("click", changeToTicketView);
 //querySelector with class doesnt work so far...
 //document.querySelector(".seat").addEventListener("click", changeColor);

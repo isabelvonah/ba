@@ -1,3 +1,10 @@
+#start-view {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 #plan {
 	border: 5px solid grey;
 	margin: 30px;
