@@ -16,8 +16,8 @@
 }
 
 .circle {
-    width: 17px;
-	height: 17px;
+    width: 21px;
+	height: 21px;
 	border-radius: 100%;
 	background-color: rgb(162, 162, 162);
 	margin: 6.5px;
@@ -28,15 +28,15 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 10px 20px 10px;
+    border-width: 0 12px 23px 12px;
     border-color: transparent transparent rgb(162, 162, 162) transparent;
     margin: 5px;
 	display: inline-block;
 }
 
 .square {
-    width: 16px;
-	height: 16px;
+    width: 20px;
+	height: 20px;
 	background-color: rgb(162, 162, 162);
 	margin: 7px;
 	display: inline-block;
@@ -63,6 +63,16 @@
 	display: none;
 }
 
+#introductionOverlay {
+    position: fixed;
+	border: 5px solid grey;
+    width: 1400px;
+    height: 800px;
+    background-color: white;
+    padding: 200px;
+    z-index: 2;
+}
+
 #summaryOverlay {
     position: fixed;
 	border: 5px solid grey;
@@ -70,4 +80,5 @@
     height: 800px;
     background-color: white;
     padding: 200px;
+    z-index: 2;
 }

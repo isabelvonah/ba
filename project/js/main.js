@@ -8,6 +8,12 @@ const changeColor = (el) => {
 
 }
 
+const startTask = () => {
+
+    document.getElementById("introductionOverlay").classList.add("hidden")
+
+}
+
 const finishTask = () => {
 
     document.getElementById("summaryOverlay").classList.remove("hidden")
