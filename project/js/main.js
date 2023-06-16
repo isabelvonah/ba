@@ -1,12 +1,12 @@
 const changeColor = (el) => {
     console.log(el);
-    if (!el.classList.contains("taken")) {
-        if (el.classList.contains("selected")) {
-            el.classList.remove("selected");
-        } else {
-            el.classList.add("selected")
-        }
+
+    if (document.getElementsByClassName("selected").length > 0) {
+        document.getElementsByClassName("selected")[0].classList.remove("selected");
     }
+
+    el.classList.add("selected");
+
 }
 
 
