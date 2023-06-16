@@ -66,17 +66,9 @@ const trackMousePositionWithDownload = () => {
     const downloadButton = document.createElement('button');
     downloadButton.textContent = 'Download Result';
     downloadButton.addEventListener('click', () => {
-      const blob = new Blob([data], {type: 'text/plain'});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'mouse_positions.txt';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    });
-    document.body.appendChild(downloadButton);
+      const blob = ProbNr:
+        <input id="probNr"></input>
+        <button id='start-view-button'>Start</button>pendChild(downloadButton);
   } */
 
 const untrackMousePosition = () => {

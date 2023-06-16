@@ -1,6 +1,60 @@
-#start-view {
+#border {
 	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	border: 5px solid grey;
+    width: 1400px;
+    height: 800px;
+}
+
+#grid {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 17px;
+	height: 17px;
+	border-radius: 100%;
+	background-color: rgb(162, 162, 162);
+	margin: 6.5px;
+	display: inline-block;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent rgb(162, 162, 162) transparent;
+    margin: 5px;
+	display: inline-block;
+}
+
+.square {
+    width: 16px;
+	height: 16px;
+	background-color: rgb(162, 162, 162);
+	margin: 7px;
+	display: inline-block;
+}
+
+.selected {
+    background-color: black;
+    border-color: transparent transparent black transparent;
+}
+
+#legend {
+    position: absolute;
+    left: 800px;
+    top: 100px;
+}
+
+#submit {
+    position: absolute;
+    left: 1300px;
+    top: 700px;
 }
