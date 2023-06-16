@@ -1,5 +1,4 @@
 const changeColor = (el) => {
-    console.log(el);
 
     if (document.getElementsByClassName("selected").length > 0) {
         document.getElementsByClassName("selected")[0].classList.remove("selected");
@@ -9,4 +8,9 @@ const changeColor = (el) => {
 
 }
 
+const finishTask = () => {
+
+    document.getElementById("summaryOverlay").classList.remove("hidden")
+
+}
 
