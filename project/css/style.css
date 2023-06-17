@@ -21,6 +21,7 @@
     height: 800px;
     background-color: white;
     padding: 200px;
+    text-align: center;
     z-index: 2;
 }
 
@@ -30,10 +31,16 @@
     top: 50px;
 }
 
-#grid {
+#task {
     position: absolute;
     left: 200px;
     top: 50px;
+}
+
+#grid {
+    position: absolute;
+    left: 200px;
+    top: 100px;
 }
 
 .row {
@@ -74,7 +81,7 @@
 
 #legend {
     position: absolute;
-    left: 800px;
+    left: 1100px;
     top: 100px;
 }
 
@@ -95,5 +102,6 @@
     height: 800px;
     background-color: white;
     padding: 200px;
+    text-align: center;
     z-index: 2;
 }
