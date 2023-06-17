@@ -115,7 +115,9 @@
 /* ui tasks */
 
 .card {
-    margin-right: 10px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0,0,0,.5);
 }
 
 .cardPopupIncorrect {
@@ -132,9 +134,24 @@
     background-color: white;
     top: 272px;
     left: 587px;
-    border: 5px solid grey;
 }
 
 .blur {
     filter: blur(5px);
+}
+
+.region {
+    border: 6px solid rgb(190, 190, 190);
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 15px 15px 5px 15px;
+    transform: translateX(-15px);
+}
+
+.region > .card {
+    margin-bottom: 10px;
+}
+
+.lastCard {
+    margin-right: 0px;
 }
