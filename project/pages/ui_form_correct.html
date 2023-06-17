@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Mouse Tracking Studie</title>
+
+</head>
+
+<body>
+
+    <div id="introductionOverlay">
+        <button id="start" class="btn btn-primary" onclick="startTask()"> Start </button>
+        In der nächsten Aufgabe wirst du ein Formular mit einigen leeren Feldern sehen. Schreibe "FHGR" in das Feld "Hochschule".
+    </div>
+
+    <div id='border'>
+        <div id="task" class="alert alert-primary" role="alert">
+            <h4 class="alert-heading">Aufgabe</h4>
+            <p> Schreibe "FHGR" in das Feld "Hochschule". </p>
+        </div>
+        
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+    </div>
+
+    <div id="summaryOverlay" class="hidden">
+        1 von 15 Aufgaben <br><br>
+        <a id="nextTask" class="btn btn-primary" href="./ui_offer_correct.html"> Nächste Aufgabe </a>
+    </div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
