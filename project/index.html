@@ -11,17 +11,66 @@
 
     <script type="module" src="./js/main.js"></script>
 
-    <title>ba playground</title>
+    <title>Mouse Tracking Studie</title>
 
 </head>
 
 <body>
 
-    <div id='start-view'>
-        ProbNr:
-        <input id="probNr"></input>
-        <button id='start-view-button'>Start</button>
-    </div>
+    <div id="border">
+        <div id="hello">
+            Hallo <br><br>
+
+            Herzlich willkommen auf der Website zu meiner Bachelor-Arbeit. Ich untersuche, ob sich das Einhalten von 
+            Design- und Gestaltprinzipien auf deine Mausbewegungen auswirkt. Wenn du dir dafür 15 Minuten Zeit nimmst, 
+            würde ich mich sehr freuen. <br><br>
+            
+            Gleich werden dir ... Aufgaben gestellt. Zu Beginn kannst du dir die Aufgabe in Ruhe 
+            durchlesen und sobald du bereit bist, auf Start klicken. Dann fängt die Aufzeichnung der Mausbewegungen und -klicks an.
+            Es handelt sich jeweils um sehr einfache und kurze Aufgaben, beispielsweise sollst du ein Element einer bestimmten 
+            Kategorie auswählen.Bitte beachte zu Beginn folgende Punkte: <br><br>
+
+            <ul>
+                <li>
+                    Verwende bitte einen Laptop oder PC für die Teilnahme. Beachte, dass der graue Rahmen komplett zu sehen sein muss.
+                    ansonsten ist dein Bildschirm zu klein.
+                </li>
+                <li>
+                    Verwende für die Aufgaben eine Maus oder ein Touchpad. Die Verwendung des Touchscreens ist für die Studie
+                    nicht geeignet, da jederzeit der Standort des Cursors bekannt sein muss.
+                </li>
+                <li>Löse die Aufgaben in einer ruhigen Umgebung, in der du nicht gestört wirst.</li>
+            </ul>
+
+            Gerne möchte ich dich um die folgenden Angaben bitten und dann kannst du loslegen. Viel Spass! <br><br>
+            
+            <form>
+                <label for="alter">Wie alt bist du?</label><br>
+                <input type="text" id="alter" name="alter" required> <br><br>
+                
+                <label for="gender">Welches Geschlecht hast du? </label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">männlich</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">weiblich</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">anderes</label> <br><br>
+                
+                <label for="mouse_touchp">Verwendest du eine Maus oder ein Touchpad? </label><br>
+                <input type="radio" id="mouse" name="mouse_touchp" value="mouse">
+                <label for="mouse">Maus</label>
+
+                <input type="radio" id="touchpad" name="mouse_touchp" value="touchpad">
+                <label for="touchpad">Touchpad</label><br><br>
+                
+                <button type="submit" class="btn btn-primary">Los</button>
+              </form>
+              
+
+        </div>
+        </div>
 
 </body>
 

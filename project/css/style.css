@@ -3,6 +3,31 @@
 	border: 5px solid grey;
     width: 1400px;
     height: 800px;
+    background-color: white;
+}
+
+/* index.html */
+
+#hello {
+    padding: 50px 50px 50px 50px;
+}
+
+/* tasks */
+
+#introductionOverlay {
+    position: fixed;
+	border: 5px solid grey;
+    width: 1400px;
+    height: 800px;
+    background-color: white;
+    padding: 200px;
+    z-index: 2;
+}
+
+#start {
+    position: absolute;
+    left: 680px;
+    top: 50px;
 }
 
 #grid {
@@ -61,16 +86,6 @@
 
 .hidden {
 	display: none;
-}
-
-#introductionOverlay {
-    position: fixed;
-	border: 5px solid grey;
-    width: 1400px;
-    height: 800px;
-    background-color: white;
-    padding: 200px;
-    z-index: 2;
 }
 
 #summaryOverlay {
