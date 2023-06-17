@@ -12,7 +12,7 @@
     padding: 50px 50px 50px 50px;
 }
 
-/* tasks */
+/* all tasks */
 
 #introductionOverlay {
     position: fixed;
@@ -46,6 +46,29 @@
 .row {
     margin-bottom: 10px;
 }
+
+#submit {
+    position: absolute;
+    left: 1310px;
+    top: 740px;
+}
+
+.hidden {
+	display: none;
+}
+
+#summaryOverlay {
+    position: fixed;
+	border: 5px solid grey;
+    width: 1400px;
+    height: 800px;
+    background-color: white;
+    padding: 200px;
+    text-align: center;
+    z-index: 2;
+}
+
+/* abstract tasks */
 
 .circle {
     width: 21px;
@@ -89,23 +112,16 @@
     top: 100px;
 }
 
-#submit {
+/* ui tasks */
+
+.card {
+    margin-right: 10px;
+}
+
+.cardPopupIncorrect {
     position: absolute;
-    left: 1310px;
-    top: 740px;
-}
-
-.hidden {
-	display: none;
-}
-
-#summaryOverlay {
-    position: fixed;
-	border: 5px solid grey;
-    width: 1400px;
-    height: 800px;
-    background-color: white;
-    padding: 200px;
-    text-align: center;
     z-index: 2;
+    background-color: white;
+    top: 177px;
+    left: 444px;
 }
