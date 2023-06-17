@@ -33,13 +33,13 @@
 
 #task {
     position: absolute;
-    left: 200px;
+    left: 150px;
     top: 50px;
 }
 
 #grid {
     position: absolute;
-    left: 200px;
+    left: 150px;
     top: 100px;
 }
 
@@ -74,6 +74,10 @@
 	display: inline-block;
 }
 
+.space {
+    margin-right: 50px;
+}
+
 .selected {
     background-color: black;
     border-color: transparent transparent black transparent;
@@ -87,8 +91,8 @@
 
 #submit {
     position: absolute;
-    left: 1300px;
-    top: 700px;
+    left: 1310px;
+    top: 740px;
 }
 
 .hidden {
