@@ -122,6 +122,19 @@
     position: absolute;
     z-index: 2;
     background-color: white;
-    top: 177px;
-    left: 444px;
+    top: 272px;
+    left: 587px;
+}
+
+.cardPopupCorrect {
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    top: 272px;
+    left: 587px;
+    border: 5px solid grey;
+}
+
+.blur {
+    filter: blur(5px);
 }

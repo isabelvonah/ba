@@ -22,7 +22,7 @@
 
     <div id='border'>
         <div id="task"> Klicke im Cookies-Popup auf "OK". </div>
-        <div id="grid">
+        <div id="grid" class="blur">
             <div class="row">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
@@ -125,18 +125,19 @@
                     </div>
                 </div>
             </div>
+
+           
             
         </div>
 
-        <div class="cardPopupIncorrect" style="width: 18rem;">
+        <div class="cardPopupCorrect" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Cookies</h5>
               <p class="card-text">Unsere Seite verwendet Cookies, um die Inhalte und Produkte für dich zu optimieren. Bitte akzeptiere diese Option.</p>
-              <a href="#" class="card-link" onclick="finishTask('uuid_nr_ui_popup_incorrect')">Ok.</a>
+              <a href="#" class="card-link" onclick="finishTask('uuid_nr_ui_popup_correct')">Ok.</a>
               <a href="#" class="card-link">Ablehnen</a>
             </div>
-        </div>
-
+          </div>
     </div>
 
     <div id="summaryOverlay" class="hidden">
