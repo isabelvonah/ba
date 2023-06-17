@@ -20,53 +20,19 @@
 
     <div id="introductionOverlay">
         <button id="start" class="btn btn-primary" onclick="startTask()"> Start </button>
-        In der nächsten Aufgabe wirst du eine Reihe von Produkten sehen. Klicke bei einem Produkt mit einem Special Offer (<i class="bi bi-star-fill"></i>) auf "Kaufen".
+        In der nächsten Aufgabe wirst du eine Reihe von Produkten sehen. Klicke beim Produkt N auf "Merken".
     </div>
 
     <div id='border'>
         <div id="task" class="alert alert-primary" role="alert">
             <h4 class="alert-heading">Aufgabe</h4>
-            <p> Klicke bei einem Produkt mit einem Special Offer (<i class="bi bi-star-fill"></i>) auf "Kaufen".  </p>
+            <p> Klicke beim Produkt N auf "Merken". </p>
         </div>
         <div id="grid">
-            <div class="row region">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Produkt 1 <i class="bi bi-star-fill"></i></h5>
-                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
-                    <a href="#" class="btn btn-secondary">Merken</a>
-                    <a href="#" class="btn btn-secondary" onclick="finishTask('uuid_nr_ui_offer_incorrect')">Kaufen</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Produkt 2 <i class="bi bi-star-fill"></i></h5>
-                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
-                    <a href="#" class="btn btn-secondary">Merken</a>
-                    <a href="#" class="btn btn-secondary" onclick="finishTask('uuid_nr_ui_offer_incorrect')">Kaufen</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Produkt 3 <i class="bi bi-star-fill"></i></h5>
-                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
-                    <a href="#" class="btn btn-secondary">Merken</a>
-                    <a href="#" class="btn btn-secondary" onclick="finishTask('uuid_nr_ui_offer_incorrect')">Kaufen</a>
-                    </div>
-                </div>
-                <div class="card lastCard" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Produkt 4 <i class="bi bi-star-fill"></i></h5>
-                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
-                    <a href="#" class="btn btn-secondary">Merken</a>
-                    <a href="#" class="btn btn-secondary" onclick="finishTask('uuid_nr_ui_offer_incorrect')">Kaufen</a>
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt 5</h5>
+                    <h5 class="card-title">Produkt F</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-secondary">Merken</a>
                     <a href="#" class="btn btn-secondary">Kaufen</a>
@@ -74,7 +40,7 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt 6</h5>
+                    <h5 class="card-title">Produkt Z</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-secondary">Merken</a>
                     <a href="#" class="btn btn-secondary">Kaufen</a>
@@ -82,7 +48,7 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt 7</h5>
+                    <h5 class="card-title">Produkt B</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-secondary">Merken</a>
                     <a href="#" class="btn btn-secondary">Kaufen</a>
@@ -90,7 +56,7 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt 8</h5>
+                    <h5 class="card-title">Produkt R</i></h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-secondary">Merken</a>
                     <a href="#" class="btn btn-secondary">Kaufen</a>
@@ -100,7 +66,7 @@
             <div class="row">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt 9</h5>
+                    <h5 class="card-title">Produkt Q</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-secondary">Merken</a>
                     <a href="#" class="btn btn-secondary">Kaufen</a>
@@ -108,7 +74,15 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt 10</h5>
+                    <h5 class="card-title">Produkt N</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
+                    <a href="#" class="btn btn-secondary" onclick="finishTask('uuid_nr_ui_proximity_correct')">Merken</a>
+                    <a href="#" class="btn btn-secondary">Kaufen</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Produkt C</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-secondary">Merken</a>
                     <a href="#" class="btn btn-secondary">Kaufen</a>
@@ -116,7 +90,17 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt 11</h5>
+                    <h5 class="card-title">Produkt M</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
+                    <a href="#" class="btn btn-secondary">Merken</a>
+                    <a href="#" class="btn btn-secondary">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Produkt O</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-secondary">Merken</a>
                     <a href="#" class="btn btn-secondary">Kaufen</a>
@@ -124,7 +108,23 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt 12</h5>
+                    <h5 class="card-title">Produkt L</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
+                    <a href="#" class="btn btn-secondary">Merken</a>
+                    <a href="#" class="btn btn-secondary">Kaufen</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Produkt V</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
+                    <a href="#" class="btn btn-secondary">Merken</a>
+                    <a href="#" class="btn btn-secondary">Kaufen</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Produkt E</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-secondary">Merken</a>
                     <a href="#" class="btn btn-secondary">Kaufen</a>
@@ -138,7 +138,7 @@
 
     <div id="summaryOverlay" class="hidden">
         1 von 15 Aufgaben <br><br>
-        <a id="nextTask" class="btn btn-primary" href="./ui_proximity_incorrect.html"> Nächste Aufgabe </a>
+        <a id="nextTask" class="btn btn-primary" href="./ui_offer_correct.html"> Nächste Aufgabe </a>
     </div>
 
     <script src="../js/main.js"></script>
