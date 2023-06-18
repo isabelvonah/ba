@@ -98,10 +98,6 @@
 	display: inline-block;
 }
 
-.space {
-    margin-right: 50px;
-}
-
 .selected {
     background-color: black;
     border-color: transparent transparent black transparent;
@@ -111,6 +107,22 @@
     position: absolute;
     left: 1100px;
     top: 120px;
+}
+
+/* abstract proximity task */
+
+.space {
+    margin-right: 50px;
+}
+
+/* abstract similarity task */
+
+.greenTriangle {
+    border-color: transparent transparent rgb(119, 154, 110) transparent;
+}
+
+.orangeSquare {
+    background-color: rgb(216, 149, 61);
 }
 
 /* ui tasks */
