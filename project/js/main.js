@@ -37,32 +37,14 @@ const startTask = () => {
 
 }
 
-const downloadTextFile = (text, filename) => {
-    // Create a Blob object from the text content
-    const blob = new Blob([text], { type: 'text/plain' });
-  
-    // Create a temporary anchor element
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = filename + ".csv";
-  
-    // Append the anchor element to the document body and trigger the download
-    document.body.appendChild(a);
-    a.click();
-  
-    // Clean up the temporary anchor element
-    document.body.removeChild(a);
-    URL.revokeObjectURL(a.href);
-  }
-
 const uploadCsv = (data, filename) => {
     const csvData = data;
-    const filename = filename;
+    const csvFilename = filename;
 
     const csvBlob = new Blob([csvData], { type: 'text/csv' });
 
     const formData = new FormData();
-    formData.append('csvFile', csvBlob, filename);
+    formData.append('csvFile', csvBlob, csvFilename);
 
     fetch('http://localhost:3000/upload', {
     method: 'POST',
@@ -80,8 +62,7 @@ const uploadCsv = (data, filename) => {
 const finishTask = (filename) => {
 
     document.getElementById("summaryOverlay").classList.remove("hidden");
-    //downloadTextFile(data, filename);
-    uploadCsv(data, filename)
+    uploadCsv(data, filename);
 
 }
 
