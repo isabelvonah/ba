@@ -1,3 +1,5 @@
+console.log("puk");
+
 const changeColor = (el) => {
 
     if (document.getElementsByClassName("selected").length > 0) {
@@ -53,10 +55,33 @@ const downloadTextFile = (text, filename) => {
     URL.revokeObjectURL(a.href);
   }
 
+const uploadCsv = (data, filename) => {
+    const csvData = data;
+    const filename = filename;
+
+    const csvBlob = new Blob([csvData], { type: 'text/csv' });
+
+    const formData = new FormData();
+    formData.append('csvFile', csvBlob, filename);
+
+    fetch('http://localhost:3000/upload', {
+    method: 'POST',
+    body: formData
+    })
+    .then(response => response.text())
+    .then(result => {
+        console.log(result);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
 const finishTask = (filename) => {
 
     document.getElementById("summaryOverlay").classList.remove("hidden");
-    downloadTextFile(data, filename);
+    //downloadTextFile(data, filename);
+    uploadCsv(data, filename)
 
 }
 

@@ -182,14 +182,6 @@
     margin-right: 0px;
 }
 
-/* proximity task */
-
-.nearCard {
-    margin-right: 0;
-    margin-bottom: 0;
-    border: 1px solid rgba(0,0,0,.5);
-}
-
 .nearRow {
     margin-bottom: 0;
 }
@@ -205,4 +197,21 @@
 
 .nearForm {
     margin-bottom: 0 !important;
+}
+
+/* proximity task */
+
+.nearCard {
+    margin-right: 0;
+    margin-bottom: 0;
+    border: 1px solid rgba(0,0,0,.5);
+}
+
+.proximityCard {
+    border: none;
+    margin: 0;
+}
+
+.proximityCard .card-body {
+    padding: 0;
 }
