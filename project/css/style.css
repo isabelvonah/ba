@@ -127,16 +127,16 @@
     position: absolute;
     z-index: 2;
     background-color: white;
-    top: 272px;
-    left: 587px;
+    top: 306px;
+    left: 546px;
 }
 
 .cardPopupCorrect {
     position: absolute;
     z-index: 3;
     background-color: white;
-    top: 272px;
-    left: 587px;
+    top: 306px;
+    left: 546px;
 }
 
 .blur {
@@ -186,8 +186,9 @@
 
 #form {
     position: absolute;
-    left: 90px;
+    left: 520px;
     top: 120px;
+    width: 350px;
 }
 
 .nearForm {

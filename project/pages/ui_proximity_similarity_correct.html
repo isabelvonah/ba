@@ -20,13 +20,13 @@
 
     <div id="introductionOverlay">
         <button id="start" class="btn btn-primary" onclick="startTask()"> Start </button>
-        In der nächsten Aufgabe wirst du eine Reihe von Produkten sehen. Klicke beim Produkt N auf "Merken".
+        In der nächsten Aufgabe wirst du eine Reihe von Produkten sehen. Klicke beim Produkt N auf "Kaufen".
     </div>
 
     <div id='border'>
         <div id="task" class="alert alert-primary" role="alert">
             <h4 class="alert-heading">Aufgabe</h4>
-            <p> Klicke beim Produkt N auf "Merken". </p>
+            <p> Klicke beim Produkt N auf "Kaufen". </p>
         </div>
         <div id="grid">
             <div class="row">
@@ -74,14 +74,6 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt N</h5>
-                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
-                    <a href="#" class="btn btn-outline-primary" onclick="finishTask('uuid_nr_ui_proximity_similarity_correct')">Merken</a>
-                    <a href="#" class="btn btn-primary">Kaufen</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
                     <h5 class="card-title">Produkt C</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-outline-primary">Merken</a>
@@ -94,6 +86,14 @@
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-outline-primary">Merken</a>
                     <a href="#" class="btn btn-primary">Kaufen</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Produkt N</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
+                    <a href="#" class="btn btn-outline-primary">Merken</a>
+                    <a href="#" class="btn btn-primary" onclick="finishTask('uuid_nr_ui_proximity_similarity_correct')">Kaufen</a>
                     </div>
                 </div>
             </div>
