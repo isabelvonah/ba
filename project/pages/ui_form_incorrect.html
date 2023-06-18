@@ -30,45 +30,40 @@
         </div>
         
         <form id="form">
-
-            <div class="mb-3">
-                <label for="hochschulverband" class="form-label">Hochschulverband</label>
-                <input type="hochschulverband" class="form-control" id="hochschulverband"> 
-            </div>
-
-            <div class="mb-3">
+            <div class="mb-3 nearForm">
               <label for="stadt" class="form-label">Stadt</label>
               <input type="stadt" class="form-control" id="stadt">    
             </div>
 
-            <div class="mb-3">
+            <div class="mb-3 nearForm">
+                <label for="hochschulverband" class="form-label">Hochschulverband</label>
+                <input type="hochschulverband" class="form-control" id="hochschulverband"> 
+            </div>
+
+            <div class="mb-3 nearForm">
                 <label for="kanton" class="form-label">Kanton</label>
                 <input type="kanton" class="form-control" id="kanton"> 
             </div>
 
-            <div class="mb-3">
+            <div class="mb-3 nearForm">
                 <label for="hochschule" class="form-label">Hochschule</label>
                 <input type="hochschule" class="form-control" id="hochschule"> 
             </div>
 
-            <div class="mb-3">
+            <div class="mb-3 nearForm">
                 <label for="land" class="form-label">Land</label>
                 <input type="land" class="form-control" id="land"> 
             </div>
 
-            <div class="mb-3">
-                <label for="institut" class="form-label">Institut</label>
-                <input type="Institut" class="form-control" id="institut"> 
-            </div>
 
-            <a href="#" class="btn btn-primary" onclick="finishTask('uuid_nr_ui_form_correct')">Fertig</a>
+            <a href="#" class="btn btn-primary" onclick="finishTask('uuid_nr_ui_form_incorrect')">Fertig</a>
           </form>
 
     </div>
 
     <div id="summaryOverlay" class="hidden">
         1 von 15 Aufgaben <br><br>
-        <a id="nextTask" class="btn btn-primary" href="./ui_form_incorrect.html"> Nächste Aufgabe </a>
+        <a id="nextTask" class="btn btn-primary" href="./ui_offer_correct.html"> Nächste Aufgabe </a>
     </div>
 
     <script src="../js/main.js"></script>
