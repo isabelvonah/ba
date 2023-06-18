@@ -181,3 +181,11 @@
 .nearRow {
     margin-bottom: 0;
 }
+
+/* form task */
+
+#form {
+    position: absolute;
+    left: 90px;
+    top: 120px;
+}
