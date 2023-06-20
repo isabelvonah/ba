@@ -44,15 +44,35 @@ const uuid = function () {
 // landing page
 
 const startStudy = () => {
-    let uuid = uuid();
+    document.getElementById("summaryOverlay").classList.remove("hidden");
 
-    let age = document.getElementById("alter");
-    let gender = document.getElementById("gender");
-    let mouse_touchpad = document.getElementById("mouse_touchp");
+    let userId = uuid();
 
-    data = age + gender + mouse_touchpad;
+    let age = document.getElementById("alter").value;
 
-    uploadCsv(data, uuid + "_info");
+    let gender = "";
+    if (document.getElementById("male").checked) {
+        gender = "male";
+    } else if (document.getElementById("female").checked) {
+        gender = "female";
+    } else {
+        gender = "other";
+    }
+
+    let mouse_touchpad = "";
+    if (document.getElementById("mouse").checked) {
+        mouse_touchpad = "mouse";
+    } else {
+        mouse_touchpad = "touchpad";
+    }
+
+    let data = userId + ", " + age + ", " + gender + ", " + mouse_touchpad;
+
+    console.log(data);
+
+    uploadCsv(data, userId + "_info");
+
+    
 }
 
 // tracking task
