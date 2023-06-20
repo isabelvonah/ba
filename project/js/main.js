@@ -61,8 +61,12 @@ const uploadCsv = (data, filename) => {
 
 const finishTask = (filename) => {
 
-    document.getElementById("summaryOverlay").classList.remove("hidden");
-    uploadCsv(data, filename);
+    // timeout so that the last clickevent is logged into the csv
+    setTimeout(function() {
+        document.getElementById("summaryOverlay").classList.remove("hidden");
+        uploadCsv(data, filename);
+      }, 10);
+    
 
 }
 
