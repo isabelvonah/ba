@@ -206,8 +206,13 @@
 .proximityCard {
     border: none;
     margin: 0;
+    width:200px !important;
 }
 
 .proximityCard .card-body {
     padding: 0;
+}
+
+.cardSelected {
+    background-color: blue;
 }

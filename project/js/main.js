@@ -165,3 +165,14 @@ const changeColor = (el) => {
 
 }
 
+// ui tasks
+
+const selectCard = (el) => {
+
+    if (document.getElementsByClassName("cardSelected").length > 0) {
+        document.getElementsByClassName("cardSelected")[0].classList.remove("cardSelected");
+    }
+
+    el.classList.add("cardSelected");
+
+}
