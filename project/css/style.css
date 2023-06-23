@@ -58,17 +58,6 @@
 	display: none;
 }
 
-#summaryOverlay {
-    position: fixed;
-	border: 5px solid grey;
-    width: 1400px;
-    height: 800px;
-    background-color: white;
-    padding: 200px;
-    text-align: center;
-    z-index: 2;
-}
-
 /* abstract tasks */
 
 .circle {
