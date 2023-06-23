@@ -2,6 +2,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 const uuidParam = urlParams.get('id');
+const sortingOption = urlParams.get('sorting');
 let taskNr = Number(urlParams.get('nr'));
 taskNr++;
 
@@ -11,7 +12,15 @@ let url = "http://127.0.0.1:5500/project/pages/"
 
 let sorting1 = ["01.html", "02.html", "03.html", "04.html", "05.html", 
                 "06.html", "07.html", "08.html", "09.html", "10.html", 
-                "11.html", "12.html", "13.html", "14.html", "15.html"]
+                "11.html", "12.html", "13.html", "14.html", "15.html"];
+
+let sorting2 = ["01.html", "02.html", "03.html", "04.html", "05.html", 
+                "06.html", "07.html", "08.html", "09.html", "10.html", 
+                "11.html", "12.html", "13.html", "14.html", "15.html"];
+
+let sorting3 = ["01.html", "02.html", "03.html", "04.html", "05.html", 
+                "06.html", "07.html", "08.html", "09.html", "10.html", 
+                "11.html", "12.html", "13.html", "14.html", "15.html"];
 
 // supporting functions
 
@@ -80,12 +89,19 @@ const startStudy = () => {
         mouse_touchpad = "touchpad";
     }
 
-    let data = userId + ", " + age + ", " + gender + ", " + mouse_touchpad;
-
-    console.log(data);
+    let randomNumber = Math.floor(Math.random() * 3) + 1;
+    let data = userId + ", " + age + ", " + gender + ", " + mouse_touchpad + ", " + randomNumber;
 
     uploadCsv(data, userId + "_info");
-    window.location.href = url + sorting1[0] + "?id=" + userId + "&nr=0";
+
+    if(randomNumber == 1) {
+        window.location.href = url + sorting1[0] + "?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
+    } else if (randomNumber == 2) {
+        window.location.href = url + sorting2[0] + "?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
+    } else if (randomNumber == 3) {
+        window.location.href = url + sorting3[0] + "?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
+    }
+    
 
     
 }
@@ -123,10 +139,17 @@ const finishTask = () => {
 
     // timeout so that the last clickevent is logged into the csv
     setTimeout(function() {
-        uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting1[taskNr-1]);
+        uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting1[taskNr-1] + "_" + sortingOption);
         document.getElementById("summaryOverlay").classList.remove("hidden");
       }, 10);
-    window.location.href = url + sorting1[taskNr] + "?id=" + uuidParam + "&nr=" + taskNr.toString();
+
+    if(sortingOption == 1) {
+        window.location.href = url + sorting1[taskNr] + "?id=" + uuidParam + "&nr=" + taskNr.toString() + "&sorting=" + sortingOption;
+    } else if (sortingOption == 2) {
+        window.location.href = url + sorting2[taskNr] + "?id=" + uuidParam + "&nr=" + taskNr.toString() + "&sorting=" + sortingOption;
+    } else if (sortingOption == 3) {
+        window.location.href = url + sorting3[taskNr] + "?id=" + uuidParam + "&nr=" + taskNr.toString() + "&sorting=" + sortingOption;
+    }
 
 }
 
