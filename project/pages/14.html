@@ -20,19 +20,19 @@
 
     <div id="introductionOverlay">
         <button id="start" class="btn btn-primary" onclick="startTask()"> Start </button>
-        In der nächsten Aufgabe wirst du eine Reihe von Produkten sehen. Klicke beim Produkt N auf "Kaufen".
+        In der nächsten Aufgabe wirst du eine Reihe von Produkten sehen. Klicke bei einem beliebigen Produkt mit einem Special Offer (<i class="bi bi-star-fill"></i>) auf "Kaufen".
     </div>
 
     <div id='border'>
         <div id="task" class="alert alert-primary" role="alert">
             <h4 class="alert-heading">Aufgabe</h4>
-            <p> Klicke beim Produkt N auf "Kaufen". </p>
+            <p> Klicke bei einem beliebigen Produkt mit einem Special Offer (<i class="bi bi-star-fill"></i>) auf "Kaufen".  </p>
         </div>
         <div id="grid">
             <div class="row">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt F</h5>
+                    <h5 class="card-title">Produkt 1</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-outline-primary">Merken</a>
                     <a href="#" class="btn btn-primary">Kaufen</a>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt Z</h5>
+                    <h5 class="card-title">Produkt 2</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-outline-primary">Merken</a>
                     <a href="#" class="btn btn-primary">Kaufen</a>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt B</h5>
+                    <h5 class="card-title">Produkt 3</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-outline-primary">Merken</a>
                     <a href="#" class="btn btn-primary">Kaufen</a>
@@ -56,7 +56,39 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt R</i></h5>
+                    <h5 class="card-title">Produkt 4 <i class="bi bi-star-fill"></i></h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
+                    <a href="#" class="btn btn-outline-primary">Merken</a>
+                    <a href="#" class="btn btn-primary" onclick="finishTask()">Kaufen</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Produkt 5</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
+                    <a href="#" class="btn btn-outline-primary">Merken</a>
+                    <a href="#" class="btn btn-primary">Kaufen</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Produkt 6</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
+                    <a href="#" class="btn btn-outline-primary">Merken</a>
+                    <a href="#" class="btn btn-primary">Kaufen</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Produkt 7 <i class="bi bi-star-fill"></i></h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
+                    <a href="#" class="btn btn-outline-primary">Merken</a>
+                    <a href="#" class="btn btn-primary" onclick="finishTask()">Kaufen</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Produkt 8</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-outline-primary">Merken</a>
                     <a href="#" class="btn btn-primary">Kaufen</a>
@@ -66,7 +98,15 @@
             <div class="row">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt Q</h5>
+                    <h5 class="card-title">Produkt 9 <i class="bi bi-star-fill"></i></h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
+                    <a href="#" class="btn btn-outline-primary">Merken</a>
+                    <a href="#" class="btn btn-primary" onclick="finishTask()">Kaufen</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Produkt 10</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-outline-primary">Merken</a>
                     <a href="#" class="btn btn-primary">Kaufen</a>
@@ -74,7 +114,7 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt C</h5>
+                    <h5 class="card-title">Produkt 11</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-outline-primary">Merken</a>
                     <a href="#" class="btn btn-primary">Kaufen</a>
@@ -82,49 +122,7 @@
                 </div>
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Produkt M</h5>
-                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
-                    <a href="#" class="btn btn-outline-primary">Merken</a>
-                    <a href="#" class="btn btn-primary">Kaufen</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Produkt N</h5>
-                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
-                    <a href="#" class="btn btn-outline-primary">Merken</a>
-                    <a href="#" class="btn btn-primary" onclick="finishTask('uuid_nr_ui_proximity_similarity_correct', 'ui_similarity_incorrect.html')">Kaufen</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Produkt O</h5>
-                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
-                    <a href="#" class="btn btn-outline-primary">Merken</a>
-                    <a href="#" class="btn btn-primary">Kaufen</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Produkt L</h5>
-                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
-                    <a href="#" class="btn btn-outline-primary">Merken</a>
-                    <a href="#" class="btn btn-primary">Kaufen</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Produkt V</h5>
-                    <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
-                    <a href="#" class="btn btn-outline-primary">Merken</a>
-                    <a href="#" class="btn btn-primary">Kaufen</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Produkt E</h5>
+                    <h5 class="card-title">Produkt 12</h5>
                     <p class="card-text">Eine kurze Beschreibung zum Produkt</p>
                     <a href="#" class="btn btn-outline-primary">Merken</a>
                     <a href="#" class="btn btn-primary">Kaufen</a>

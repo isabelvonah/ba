@@ -7,11 +7,17 @@ taskNr++;
 
 let url = "http://127.0.0.1:5500/project/pages/"
 
+// task sorting
+
+let sorting1 = ["01.html", "02.html", "03.html", "04.html", "05.html", 
+                "06.html", "07.html", "08.html", "09.html", "10.html", 
+                "11.html", "12.html", "13.html", "14.html", "15.html"]
+
 // supporting functions
 
 const uploadCsv = (data, filename) => {
     const csvData = data;
-    const csvFilename = filename;
+    const csvFilename = filename + "_" + new Date().getTime();
 
     const csvBlob = new Blob([csvData], { type: 'text/csv' });
 
@@ -52,7 +58,7 @@ const uuid = function () {
 
 // landing page
 
-const startStudy = (nextPage) => {
+const startStudy = () => {
 
     let userId = uuid();
 
@@ -79,7 +85,7 @@ const startStudy = (nextPage) => {
     console.log(data);
 
     uploadCsv(data, userId + "_info");
-    window.location.href = url + nextPage + "?id=" + userId + "&nr=0";
+    window.location.href = url + sorting1[0] + "?id=" + userId + "&nr=0";
 
     
 }
@@ -113,14 +119,14 @@ const startTask = () => {
 
 }
 
-const finishTask = (filename, nextPage) => {
+const finishTask = () => {
 
     // timeout so that the last clickevent is logged into the csv
     setTimeout(function() {
-        uploadCsv(data, uuidParam + "_" + taskNr + "_" + filename);
+        uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting1[taskNr-1]);
         document.getElementById("summaryOverlay").classList.remove("hidden");
       }, 10);
-    window.location.href = url + nextPage + "?id=" + uuidParam + "&nr=" + taskNr.toString();
+    window.location.href = url + sorting1[taskNr] + "?id=" + uuidParam + "&nr=" + taskNr.toString();
 
 }
 
