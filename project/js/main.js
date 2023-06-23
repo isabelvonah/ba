@@ -1,4 +1,10 @@
-const uuidParam = window.location.search.substring(1)
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+const uuidParam = urlParams.get('id');
+let taskNr = Number(urlParams.get('nr'));
+taskNr++;
+
 let url = "http://127.0.0.1:5500/project/pages/"
 
 // supporting functions
@@ -73,7 +79,7 @@ const startStudy = (nextPage) => {
     console.log(data);
 
     uploadCsv(data, userId + "_info");
-    window.location.href = url + nextPage;
+    window.location.href = url + nextPage + "?id=" + userId + "&nr=0";
 
     
 }
@@ -111,10 +117,10 @@ const finishTask = (filename, nextPage) => {
 
     // timeout so that the last clickevent is logged into the csv
     setTimeout(function() {
-        uploadCsv(data, filename);
+        uploadCsv(data, uuidParam + "_" + taskNr + "_" + filename);
         document.getElementById("summaryOverlay").classList.remove("hidden");
       }, 10);
-    window.location.href = url + nextPage;
+    window.location.href = url + nextPage + "?id=" + uuidParam + "&nr=" + taskNr.toString();
 
 }
 
