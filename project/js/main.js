@@ -1,4 +1,5 @@
 const uuidParam = window.location.search.substring(1)
+let url = "http://127.0.0.1:5500/project/pages/"
 
 // supporting functions
 
@@ -45,8 +46,7 @@ const uuid = function () {
 
 // landing page
 
-const startStudy = () => {
-    document.getElementById("summaryOverlay").classList.remove("hidden");
+const startStudy = (nextPage) => {
 
     let userId = uuid();
 
@@ -73,6 +73,7 @@ const startStudy = () => {
     console.log(data);
 
     uploadCsv(data, userId + "_info");
+    window.location.href = url + nextPage;
 
     
 }
@@ -105,8 +106,6 @@ const startTask = () => {
     startTracking();
 
 }
-
-let url = "http://127.0.0.1:5500/project/pages/"
 
 const finishTask = (filename, nextPage) => {
 
