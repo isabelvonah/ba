@@ -1,3 +1,5 @@
+const uuidParam = window.location.search.substring(1)
+
 // supporting functions
 
 const uploadCsv = (data, filename) => {
@@ -104,14 +106,16 @@ const startTask = () => {
 
 }
 
-const finishTask = (filename) => {
+let url = "http://127.0.0.1:5500/project/pages/"
+
+const finishTask = (filename, nextPage) => {
 
     // timeout so that the last clickevent is logged into the csv
     setTimeout(function() {
         uploadCsv(data, filename);
         document.getElementById("summaryOverlay").classList.remove("hidden");
       }, 10);
-    
+    window.location.href = url + nextPage;
 
 }
 
