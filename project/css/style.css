@@ -98,8 +98,15 @@
 	display: inline-block;
 }
 
-.selected {
+.square.selected {
     background-color: black;
+}
+
+.circle.selected {
+    background-color: black;
+}
+
+.triangle.selected {
     border-color: transparent transparent black transparent;
 }
 
