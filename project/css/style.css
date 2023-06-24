@@ -40,7 +40,7 @@
 
 #grid {
     position: absolute;
-    left: 90px;
+    left: 50px;
     top: 120px;
 }
 
@@ -58,7 +58,7 @@
 	display: none;
 }
 
-/* abstract tasks */
+/* A tasks */
 
 .circle {
     width: 26px;
@@ -105,13 +105,9 @@
     top: 120px;
 }
 
-/* abstract proximity task */
-
 .space {
     margin-right: 50px;
 }
-
-/* abstract similarity task */
 
 .greenTriangle {
     border-color: transparent transparent rgb(119, 154, 110) transparent;
@@ -121,8 +117,6 @@
     background-color: rgb(216, 149, 61);
 }
 
-/* abstract region task */
-
 .borderRow {
     border: 1px solid black;
 }
@@ -131,12 +125,36 @@
     border-width: 0 12px 23px 12px;
 }
 
-/* ui tasks */
+/* B tasks */
 
 .card {
     margin-right: 25px;
     margin-bottom: 15px;
     border: 1px solid rgba(0,0,0,.5);
+}
+
+.withoutBorder {
+    border: none;
+}
+
+/* ? tasks */
+
+.proximityCard {
+    border: none;
+    margin: 0;
+    width:200px !important;
+}
+
+.proximityCard .card-body {
+    padding: 0;
+}
+
+.cardSelected {
+    background-color: rgb(162, 162, 162);
+}
+
+.proxCardCorr {
+    border: none;
 }
 
 /* popup task */
@@ -207,26 +225,4 @@
 
 /* proximity task */
 
-.nearCard {
-    margin-right: 0;
-    margin-bottom: 0;
-    border: 1px solid rgba(0,0,0,.5);
-}
 
-.proximityCard {
-    border: none;
-    margin: 0;
-    width:200px !important;
-}
-
-.proximityCard .card-body {
-    padding: 0;
-}
-
-.cardSelected {
-    background-color: rgb(162, 162, 162);
-}
-
-.proxCardCorr {
-    border: none;
-}
