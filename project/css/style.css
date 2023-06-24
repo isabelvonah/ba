@@ -137,7 +137,7 @@
     border: none;
 }
 
-/* ? tasks */
+/* c tasks */
 
 .proximityCard {
     border: none;
@@ -147,6 +147,15 @@
 
 .proximityCard .card-body {
     padding: 0;
+}
+
+.proximityCardBorder {
+    margin: 2px !important;
+    width:200px !important;
+}
+
+.proximityCardBorder .card-body {
+    padding: 2px;
 }
 
 .cardSelected {

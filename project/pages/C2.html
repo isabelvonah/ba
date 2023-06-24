@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Mouse Tracking Studie</title>
+
+</head>
+
+<body>
+
+    <div id="introductionOverlay">
+        <button id="start" class="btn btn-primary" onclick="startTask()"> Start </button>
+        In der nächsten Aufgabe wirst du eine Liste mit mehreren Elementen sehen. Klicke auf das Element G und dann auf "Fertig".
+    </div>
+
+    <div id='border'>
+        <div id="task" class="alert alert-primary" role="alert">
+            <h4 class="alert-heading">Aufgabe</h4>
+            <p> Klicke auf das Element G und dann auf "Fertig". </p>
+        </div>
+        <div id="grid">
+            <div class="row">
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element F</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element Z</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element B</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element R</i></h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element Q</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element C</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element M</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element N</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element O</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element L</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element V</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element E</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element D</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element S</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element Z</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+                    <div class="card-body">
+                    <h5 class="card-title">Element G</h5>
+                    <p class="card-text">Eine kurze Beschreibung zum Element</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="submit">
+            <button id="Fertig" class="btn btn-primary" onclick="finishTask()">Fertig</button>
+        </div>
+
+    </div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

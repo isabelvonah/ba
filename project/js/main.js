@@ -11,16 +11,19 @@ let url = "http://127.0.0.1:5500/project/pages/"
 // task sorting
 
 let sorting1 = ["A1.html", "A2.html", "A3.html", "A4.html", "A5.html", 
-                "B1.html", "B2.html", "B3.html", "B4.html", "10.html", 
-                "11.html", "12.html", "13.html", "14.html", "15.html", "thanks.html"];
+                "B1.html", "B2.html", "B3.html", "B4.html", 
+                "C1.html", "C2.html", "C3.html", "C4.html", 
+                "14.html", "15.html", "thanks.html"];
 
 let sorting2 = ["A1.html", "A2.html", "A3.html", "A4.html", "A5.html", 
-                "B1.html", "B2.html", "B3.html", "B4.html", "10.html", 
-                "11.html", "12.html", "13.html", "14.html", "15.html", "thanks.html"];
+                "B1.html", "B2.html", "B3.html", "B4.html", 
+                "C1.html", "C2.html", "C3.html", "C4.html", 
+                "14.html", "15.html", "thanks.html"];
 
 let sorting3 = ["A1.html", "A2.html", "A3.html", "A4.html", "A5.html", 
-                "B1.html", "B2.html", "B3.html", "B4.html", "10.html", 
-                "11.html", "12.html", "13.html", "14.html", "15.html", "thanks.html"];
+                "B1.html", "B2.html", "B3.html", "B4.html", 
+                "C1.html", "C2.html", "C3.html", "C4.html", 
+                "14.html", "15.html", "thanks.html"];
 
 // supporting functions
 
