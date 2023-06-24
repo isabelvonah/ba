@@ -10,29 +10,11 @@ let url = "http://127.0.0.1:5500/project/pages/"
 
 // task sorting
 
-let sorting1 = ["A1.html", "A2.html", "A3.html", "A4.html", "A5.html", 
-                "B1.html", "B2.html", "B3.html", "B4.html", 
-                "C1.html", "C2.html", "C3.html", "C4.html", 
-                "D1.html", "D2.html",
-                "E1.html", "E2.html", "E3.html",
-                "F1.html", "F2.html", "F3.html", 
-                "thanks.html"];
+let sorting1 = ["A2", "C4", "B1", "E3", "A3", "F2", "D1", "B4", "C3", "A1", "E2", "F1", "B3", "C1", "A4", "D2", "B2", "C2", "A5", "E1", "F3"];
 
-let sorting2 = ["A1.html", "A2.html", "A3.html", "A4.html", "A5.html", 
-                "B1.html", "B2.html", "B3.html", "B4.html", 
-                "C1.html", "C2.html", "C3.html", "C4.html", 
-                "D1.html", "D2.html",
-                "E1.html", "E2.html", "E3.html",
-                "F1.html", "F2.html", "F3.html", 
-                "thanks.html"];
+let sorting2 = ["A1", "C1", "B4", "E2", "A2", "F3", "D3", "B3", "C2", "A3", "E1", "F2", "B2", "C3", "A5", "D1", "B1", "C4", "A4", "E3", "F1"];
 
-let sorting3 = ["A1.html", "A2.html", "A3.html", "A4.html", "A5.html", 
-                "B1.html", "B2.html", "B3.html", "B4.html", 
-                "C1.html", "C2.html", "C3.html", "C4.html", 
-                "D1.html", "D2.html",
-                "E1.html", "E2.html", "E3.html",
-                "F1.html", "F2.html", "F3.html", 
-                "thanks.html"];
+let sorting3 = ["A3", "C2", "B2", "E1", "A1", "F3", "D2", "B4", "C4", "A2", "E3", "F1", "B3", "C3", "A4", "D1", "B1", "C1", "A5", "E2", "F2"];
 
 // supporting functions
 
@@ -107,11 +89,11 @@ const startStudy = () => {
     uploadCsv(data, userId + "_info");
 
     if(randomNumber == 1) {
-        window.location.href = url + sorting1[0] + "?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
+        window.location.href = url + sorting1[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
     } else if (randomNumber == 2) {
-        window.location.href = url + sorting2[0] + "?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
+        window.location.href = url + sorting2[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
     } else if (randomNumber == 3) {
-        window.location.href = url + sorting3[0] + "?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
+        window.location.href = url + sorting3[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
     }
     
 
@@ -156,11 +138,11 @@ const finishTask = () => {
       }, 10);
 
     if(sortingOption == 1) {
-        window.location.href = url + sorting1[taskNr] + "?id=" + uuidParam + "&nr=" + taskNr.toString() + "&sorting=" + sortingOption;
+        window.location.href = url + sorting1[taskNr] + ".html?id=" + uuidParam + "&nr=" + taskNr.toString() + "&sorting=" + sortingOption;
     } else if (sortingOption == 2) {
-        window.location.href = url + sorting2[taskNr] + "?id=" + uuidParam + "&nr=" + taskNr.toString() + "&sorting=" + sortingOption;
+        window.location.href = url + sorting2[taskNr] + ".html?id=" + uuidParam + "&nr=" + taskNr.toString() + "&sorting=" + sortingOption;
     } else if (sortingOption == 3) {
-        window.location.href = url + sorting3[taskNr] + "?id=" + uuidParam + "&nr=" + taskNr.toString() + "&sorting=" + sortingOption;
+        window.location.href = url + sorting3[taskNr] + ".html?id=" + uuidParam + "&nr=" + taskNr.toString() + "&sorting=" + sortingOption;
     }
 
 }
