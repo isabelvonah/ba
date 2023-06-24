@@ -61,8 +61,8 @@
 /* abstract tasks */
 
 .circle {
-    width: 21px;
-	height: 21px;
+    width: 26px;
+	height: 26px;
 	border-radius: 100%;
 	background-color: rgb(162, 162, 162);
 	margin: 6.5px;
@@ -73,15 +73,15 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 12px 23px 12px;
+    border-width: 0 14px 27px 14px;
     border-color: transparent transparent rgb(162, 162, 162) transparent;
     margin: 5px;
 	display: inline-block;
 }
 
 .square {
-    width: 20px;
-	height: 20px;
+    width: 25px;
+	height: 25px;
 	background-color: rgb(162, 162, 162);
 	margin: 7px;
 	display: inline-block;
@@ -119,6 +119,22 @@
 
 .orangeSquare {
     background-color: rgb(216, 149, 61);
+}
+
+/* Fitts Law tasks */
+
+.square.small {
+    width: 20px;
+	height: 20px;
+}
+
+.circle.small {
+    width: 21px;
+	height: 21px;
+}
+
+.triangle.small {
+    border-width: 0 12px 23px 12px;
 }
 
 /* ui tasks */
