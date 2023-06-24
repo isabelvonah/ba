@@ -216,3 +216,7 @@
 .cardSelected {
     background-color: rgb(162, 162, 162);
 }
+
+.proxCardCorr {
+    border: none;
+}
