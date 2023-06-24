@@ -224,7 +224,7 @@
     z-index: 2;
 }
 
-/* form task */
+/* F tasks */
 
 #form {
     position: absolute;
@@ -237,6 +237,57 @@
     margin-bottom: 0 !important;
 }
 
-/* proximity task */
+/* source: https://codingbeautydev.com/blog/material-design-text-field/" */
 
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  input {
+    height: 48px;
+    width: 280px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 16px;
+  }
+  
+  .label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+  }
+  
+  input, .label .text {
+    font-size: 16px;
+  }
+  
+  .label .text {
+    transition: all 0.15s ease-out;
+    color: grey;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 2px solid blue;
+  }
+  
+  input:focus + .label .text, :not(input[value=""]) + .label .text {
+    font-size: 12px;
+    transform: translate(0, -150%);
+    background-color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  
+  input:focus + .label .text {
+    color: blue;
+  }
+  
+  
 

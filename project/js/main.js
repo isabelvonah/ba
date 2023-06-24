@@ -188,3 +188,13 @@ const selectCard = (el) => {
     el.classList.add("cardSelected");
 
 }
+
+// F tasks   
+
+const input = document.getElementById('fname');
+
+input.addEventListener('input', () => {
+  input.setAttribute('value', input.value);
+});
+
+
