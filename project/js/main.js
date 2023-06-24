@@ -10,15 +10,15 @@ let url = "http://127.0.0.1:5500/project/pages/"
 
 // task sorting
 
-let sorting1 = ["01.html", "02.html", "03.html", "04.html", "05.html", 
+let sorting1 = ["A1.html", "A2.html", "A3.html", "A4.html", "A5.html", 
                 "06.html", "07.html", "08.html", "09.html", "10.html", 
                 "11.html", "12.html", "13.html", "14.html", "15.html", "thanks.html"];
 
-let sorting2 = ["01.html", "02.html", "03.html", "04.html", "05.html", 
+let sorting2 = ["A1.html", "A2.html", "A3.html", "A4.html", "A5.html", 
                 "06.html", "07.html", "08.html", "09.html", "10.html", 
                 "11.html", "12.html", "13.html", "14.html", "15.html", "thanks.html"];
 
-let sorting3 = ["01.html", "02.html", "03.html", "04.html", "05.html", 
+let sorting3 = ["A1.html", "A2.html", "A3.html", "A4.html", "A5.html", 
                 "06.html", "07.html", "08.html", "09.html", "10.html", 
                 "11.html", "12.html", "13.html", "14.html", "15.html", "thanks.html"];
 

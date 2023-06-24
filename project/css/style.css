@@ -121,16 +121,10 @@
     background-color: rgb(216, 149, 61);
 }
 
-/* Fitts Law tasks */
+/* abstract region task */
 
-.square.small {
-    width: 20px;
-	height: 20px;
-}
-
-.circle.small {
-    width: 21px;
-	height: 21px;
+.borderRow {
+    border: 1px solid black;
 }
 
 .triangle.small {
