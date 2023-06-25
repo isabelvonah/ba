@@ -31,7 +31,7 @@ const uploadCsv = (data, filename) => {
     const formData = new FormData();
     formData.append('csvFile', csvBlob, csvFilename);
 
-    fetch('https://139.59.158.175:3000/uploads', {
+    fetch('http://139.59.158.175:3000/uploads', {
     method: 'POST',
     body: formData
     })
