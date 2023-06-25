@@ -3,8 +3,10 @@ const urlParams = new URLSearchParams(queryString);
 
 const uuidParam = urlParams.get('id');
 const sortingOption = urlParams.get('sorting');
+
 let taskNr = Number(urlParams.get('nr'));
 taskNr++;
+document.getElementById("taskNumber").innerHTML = taskNr;
 
 let url = "http://127.0.0.1:5500/project/pages/"
 
