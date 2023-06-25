@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,16 +18,16 @@
     <div id="introductionOverlay">
         <button id="start" class="btn btn-primary" onclick="startTask()"> Start </button>
         Aufgabe <span id="taskNumber"></span> / 22: <br><br>
-        Wähle in der nächsten Aufgabe ein beliebiges Element der Kategorie A aus und klicke auf "Fertig".
+        Wähle in der nächsten Aufgabe ein Element <b>in der drittuntersten Reihe</b> der Kategorie C aus und klicke auf "Fertig".
     </div>
 
     <div id='border'>
         <div id="task" class="alert alert-primary" role="alert">
             <h4 class="alert-heading">Aufgabe</h4>
-            <p> Wähle ein beliebiges Element der Kategorie A aus und klicke auf "Fertig".</p>
+            <p> Wähle ein Element <b>in der drittuntersten Reihe</b> der Kategorie C aus und klicke auf "Fertig". </p>
         </div>
         <div id="grid">
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -54,7 +53,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -80,7 +79,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -106,7 +105,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -132,7 +131,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -158,7 +157,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -184,7 +183,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -210,7 +209,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -236,7 +235,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -262,7 +261,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -288,7 +287,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -314,7 +313,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -340,7 +339,7 @@
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
                 <div class="square orangeSquare" onclick="changeColor(this)"></div>
             </div>
-            <div class="row">
+            <div class="row borderRow">
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
                 <div class="circle" onclick="changeColor(this)"></div>
@@ -370,9 +369,9 @@
            
         </div>
         <div id="legend">
-            <div class="circle" onclick="changeColor(this)" style="margin:0; margin-right:10px;"></div>
-            Kategorie A <br>
             <div class="square orangeSquare" onclick="changeColor(this)" style="margin:0; margin-right:10px;"></div>
+            Kategorie A <br>
+            <div class="circle" onclick="changeColor(this)" style="margin:0; margin-right:10px;"></div>
             Kategorie B <br>
             <div class="triangle greenTriangle" onclick="changeColor(this)" style="margin:0; margin-right:10px;"></div>
             Kategorie C
