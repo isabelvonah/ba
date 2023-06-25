@@ -31,7 +31,7 @@ const uploadCsv = (data, filename) => {
     const formData = new FormData();
     formData.append('csvFile', csvBlob, csvFilename);
 
-    fetch('https://ba.simonmettler.com/uploads', {
+    fetch('https://ba.simonmettler.com/upload', {
     method: 'POST',
     body: formData
     })
@@ -161,8 +161,7 @@ const finishTask = () => {
         } else if (sortingOption == 3) {
             uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting3[taskNr-1] + "_" + sortingOption);
         }
-
-        document.getElementById("summaryOverlay").classList.remove("hidden");
+        
       }, 10);
 
     if(sortingOption == 1) {
