@@ -44,10 +44,10 @@
             Gerne möchte ich dich nun um die folgenden Angaben bitten und dann kannst du loslegen. Viel Spass! <br><br>
             
             <form>
-                <label for="alter">Wie alt bist du?</label><br>
+                <label for="alter">Wie alt bist du?</label><span id="errorAlter" class="errorMessage hidden">Gib dein Alter bitte als ganze Zahl an.</span><br>
                 <input type="text" id="alter" name="alter" required> <br><br>
                 
-                <label for="gender">Welches Geschlecht hast du? </label><br>
+                <label for="gender">Welches Geschlecht hast du? </label><span id="errorGender" class="errorMessage hidden">Bitte wähle eine Option aus.</span><br>
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">männlich</label>
                 
@@ -57,7 +57,7 @@
                 <input type="radio" id="other" name="gender" value="other">
                 <label for="other">anderes</label> <br><br>
                 
-                <label for="mouse_touchp">Verwendest du eine Maus oder ein Touchpad? </label><br>
+                <label for="mouse_touchp">Verwendest du eine Maus oder ein Touchpad? </label> <span id="errorMouseTouchpad" class="errorMessage hidden">Bitte wähle eine Option aus.</span><br>
                 <input type="radio" id="mouse" name="mouse_touchp" value="mouse">
                 <label for="mouse">Maus</label>
 

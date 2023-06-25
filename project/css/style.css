@@ -12,6 +12,12 @@
     padding: 50px 50px 50px 50px;
 }
 
+.errorMessage {
+    margin-left: 10px;
+    color: red;
+    font-style: italic;
+}
+
 /* all tasks */
 
 #introductionOverlay {

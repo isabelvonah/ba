@@ -67,20 +67,38 @@ const startStudy = () => {
 
     let age = document.getElementById("alter").value;
 
+    if (isNaN(Number(age)) || Number(age) == 0) {
+        document.getElementById("errorAlter").classList.remove("hidden");
+        return;
+    } else {
+        document.getElementById("errorAlter").classList.add("hidden");
+    }
+
     let gender = "";
     if (document.getElementById("male").checked) {
         gender = "male";
+        document.getElementById("errorGender").classList.add("hidden");
     } else if (document.getElementById("female").checked) {
         gender = "female";
-    } else {
+        document.getElementById("errorGender").classList.add("hidden");
+    } else if (document.getElementById("other").checked) {
         gender = "other";
+        document.getElementById("errorGender").classList.add("hidden");
+    } else {
+        document.getElementById("errorGender").classList.remove("hidden");
+        return;
     }
 
     let mouse_touchpad = "";
     if (document.getElementById("mouse").checked) {
         mouse_touchpad = "mouse";
-    } else {
+        document.getElementById("errorMouseTouchpad").classList.add("hidden");
+    } else if (document.getElementById("touchpad").checked) {
         mouse_touchpad = "touchpad";
+        document.getElementById("errorMouseTouchpad").classList.add("hidden");
+    } else {
+        document.getElementById("errorMouseTouchpad").classList.remove("hidden");
+        return;
     }
 
     let randomNumber = Math.floor(Math.random() * 3) + 1;
