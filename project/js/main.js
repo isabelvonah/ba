@@ -10,6 +10,20 @@ if (document.getElementById("taskNumber")) {
     document.getElementById("taskNumber").innerHTML = taskNr;
 }
 
+let catSpans = document.getElementsByClassName("cat");
+let abc = Math.floor(Math.random() * 3) + 1;
+
+if (document.getElementsByClassName("cat")) {
+
+    for (let i = 0; i<catSpans.length; i++) {
+        if (abc == 1) {catSpans[i].innerHTML = "A"}
+        else if (abc == 2) {catSpans[i].innerHTML = "B"}
+        else if (abc == 3) {catSpans[i].innerHTML = "C"}
+    }
+}
+
+
+
 let url = "http://127.0.0.1:5500/project/pages/"
 
 // task sorting
@@ -24,7 +38,7 @@ let sorting3 = ["A3", "C2", "B2", "E1", "A1", "F3", "D2", "B4", "C4", "A2", "E3"
 
 const uploadCsv = (data, filename) => {
     const csvData = data;
-    const csvFilename = filename + "_" + new Date().getTime();
+    const csvFilename = filename + "_" + new Date().getTime() + "_" + abc;
 
     const csvBlob = new Blob([csvData], { type: 'text/csv' });
 
@@ -153,7 +167,15 @@ const finishTask = () => {
 
     // timeout so that the last clickevent is logged into the csv
     setTimeout(function() {
-        uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting1[taskNr-1] + "_" + sortingOption);
+
+        if(sortingOption == 1) {
+            uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting1[taskNr-1] + "_" + sortingOption);
+        } else if (sortingOption == 2) {
+            uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting2[taskNr-1] + "_" + sortingOption);
+        } else if (sortingOption == 3) {
+            uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting3[taskNr-1] + "_" + sortingOption);
+        }
+
         document.getElementById("summaryOverlay").classList.remove("hidden");
       }, 10);
 
