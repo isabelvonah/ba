@@ -95,9 +95,7 @@ const startStudy = () => {
     } else if (randomNumber == 3) {
         window.location.href = url + sorting3[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
     }
-    
-
-    
+     
 }
 
 // tracking task
@@ -173,10 +171,13 @@ const selectCard = (el) => {
 
 // F tasks   
 
-const input = document.getElementById('fname');
+const inputs = document.getElementsByClassName("materialInput");
 
-input.addEventListener('input', () => {
-  input.setAttribute('value', input.value);
-});
+for (let i = 0; i<inputs.length; i++) {
+    inputs[i].addEventListener('input', () => {
+        inputs[i].setAttribute('value', inputs[i].value);
+      });
+}
+
 
 
