@@ -10,7 +10,7 @@ if (document.getElementById("taskNumber")) {
     document.getElementById("taskNumber").innerHTML = taskNr;
 }
 
-let url = "http://127.0.0.1:5500/project/pages/"
+let url = "https://isabelvonah.github.io/ba/project/pages/"
 
 // task sorting
 
