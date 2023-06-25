@@ -14,11 +14,11 @@ let url = "https://isabelvonah.github.io/ba/project/pages/"
 
 // task sorting
 
-let sorting1 = ["A2", "C4", "B1", "E3", "A3", "F2", "D1", "B4", "C3", "A1", "E2", "F1", "B3", "C1", "A4", "D2", "B2", "C2", "A6", "E1", "F3", "A5", "thanks"];
+let sorting1 = ["A2", "C4", "B1", "E3", "A3", "F2", "D1", "B4", "C3", "A1", "E2", "F1", "A7", "B3", "C1", "A4", "D2", "B2", "C2", "A6", "E1", "F3", "A5", "thanks"];
 
-let sorting2 = ["A1", "C1", "B4", "E2", "A2", "F3", "D2", "B3", "C2", "A3", "E1", "F2", "B2", "C3", "A6", "D1", "B1", "C4", "A5", "E3", "F1", "A4", "thanks"];
+let sorting2 = ["A1", "C1", "B4", "E2", "A2", "F3", "D2", "B3", "C2", "A3", "E1", "F2", "A4", "B2", "C3", "A6", "D1", "B1", "C4", "A5", "E3", "F1", "A7", "thanks"];
 
-let sorting3 = ["A3", "C2", "B2", "E1", "A1", "F3", "D2", "B4", "C4", "A2", "E3", "F1", "B3", "C3", "A5", "D1", "B1", "C1", "A4", "E2", "F2", "A6", "thanks"];
+let sorting3 = ["A3", "C2", "B2", "E1", "A1", "F3", "D2", "B4", "C4", "A2", "E3", "F1", "A6", "B3", "C3", "A5", "D1", "B1", "C1", "A7", "E2", "F2", "A4", "thanks"];
 
 // supporting functions
 
