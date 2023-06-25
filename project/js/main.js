@@ -108,8 +108,12 @@ const startStudy = () => {
     let randomNumber = Math.floor(Math.random() * 3) + 1;
     let data = userId + ", " + age + ", " + gender + ", " + mouse_touchpad + ", " + randomNumber;
 
-    uploadCsv(data, userId + "_info");
-
+    setTimeout(function() {
+        
+        uploadCsv(data, userId + "_info");
+        
+      }, 10);
+      
     if(randomNumber == 1) {
         window.location.href = url + sorting1[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
     } else if (randomNumber == 2) {
@@ -161,7 +165,7 @@ const finishTask = () => {
         } else if (sortingOption == 3) {
             uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting3[taskNr-1] + "_" + sortingOption);
         }
-        
+
       }, 10);
 
     if(sortingOption == 1) {
