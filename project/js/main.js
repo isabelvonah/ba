@@ -114,7 +114,7 @@ const startStudy = () => {
         
       }, 10);
       
-    window.location.href = url + "first_task.html";
+    window.location.href = url + "first_task.html?sorting=" + randomNumber;
      
 }
 
