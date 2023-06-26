@@ -114,6 +114,11 @@ const startStudy = () => {
         
       }, 10);
       
+    window.location.href = url + "first_task.html";
+     
+}
+
+const startTasks = () => {
     if(randomNumber == 1) {
         window.location.href = url + sorting1[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
     } else if (randomNumber == 2) {
@@ -121,7 +126,6 @@ const startStudy = () => {
     } else if (randomNumber == 3) {
         window.location.href = url + sorting3[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
     }
-     
 }
 
 // tracking task
