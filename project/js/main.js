@@ -120,11 +120,11 @@ const startStudy = () => {
 
 const startTasks = () => {
     if(sortingOption == 1) {
-        window.location.href = url + sorting1[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + sortingOption;
+        window.location.href = url + sorting1[0] + ".html?id=" + uuidParam + "&nr=0" + "&sorting=" + sortingOption;
     } else if (sortingOption == 2) {
-        window.location.href = url + sorting2[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + sortingOption;
+        window.location.href = url + sorting2[0] + ".html?id=" + uuidParam + "&nr=0" + "&sorting=" + sortingOption;
     } else if (sortingOption == 3) {
-        window.location.href = url + sorting3[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + sortingOption;
+        window.location.href = url + sorting3[0] + ".html?id=" + uuidParam + "&nr=0" + "&sorting=" + sortingOption;
     }
 }
 
