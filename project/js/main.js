@@ -114,17 +114,17 @@ const startStudy = () => {
         
       }, 10);
       
-    window.location.href = url + "first_task.html?sorting=" + randomNumber;
+    window.location.href = url + "first_task" + ".html?id=" + userId + "&sorting=" + randomNumber;
      
 }
 
 const startTasks = () => {
-    if(randomNumber == 1) {
-        window.location.href = url + sorting1[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
-    } else if (randomNumber == 2) {
-        window.location.href = url + sorting2[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
-    } else if (randomNumber == 3) {
-        window.location.href = url + sorting3[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + randomNumber;
+    if(sortingOption == 1) {
+        window.location.href = url + sorting1[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + sortingOption;
+    } else if (sortingOption == 2) {
+        window.location.href = url + sorting2[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + sortingOption;
+    } else if (sortingOption == 3) {
+        window.location.href = url + sorting3[0] + ".html?id=" + userId + "&nr=0" + "&sorting=" + sortingOption;
     }
 }
 
