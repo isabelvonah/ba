@@ -164,11 +164,16 @@ const finishTask = () => {
         
         if(sortingOption == 1) {
             uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting1[taskNr-1] + "_" + sortingOption);
+            console.log(uuidParam + "_" + taskNr + "_" + sorting1[taskNr-1] + "_" + sortingOption);
         } else if (sortingOption == 2) {
             uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting2[taskNr-1] + "_" + sortingOption);
+            console.log(uuidParam + "_" + taskNr + "_" + sorting2[taskNr-1] + "_" + sortingOption);
         } else if (sortingOption == 3) {
             uploadCsv(data, uuidParam + "_" + taskNr + "_" + sorting3[taskNr-1] + "_" + sortingOption);
+            console.log(uuidParam + "_" + taskNr + "_" + sorting3[taskNr-1] + "_" + sortingOption);
         }
+
+
 
       }, 10);
 
