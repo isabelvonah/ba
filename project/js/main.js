@@ -147,6 +147,7 @@ const startTracking = () => {
         const elapsedTime = currentTime - startTime;
 
         data += `c, ${event.clientX}, ${event.clientY}, ${elapsedTime}\n`;
+        console.log("clicked");
     });
 };
 
